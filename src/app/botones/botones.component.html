@@ -1,0 +1,22 @@
+<div>
+
+<button [disabled]= "botondesabled" class="btn btn-danger" (click)="textocolor = 'text-danger'">Color Rojo</button>
+<button [disabled]= "botondesabled" class="btn btn-success mx-2" (click)="textocolor = 'text-success'">Color Verde</button>
+<button [disabled]= "botondesabled" class="btn btn-primary" (click)="textocolor = 'text-primary'">Color Azul</button>
+
+</div>
+
+<p [class]="textocolor"> texto que cambia de color </p>
+
+<button class="btn btn-secondary" (click)="botondesabled = !botondesabled">Desactivar/Activar</button>
+
+
+<button class="btn btn-danger" >Imagen 1</button>
+<button class="btn btn-primary" >Imagen 2</button>
+
+
+
+
+
+<img [src]="img" alt="">
+

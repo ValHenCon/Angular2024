@@ -1,0 +1,42 @@
+<div class="card">
+    <div class="card-body">
+            
+        <form (ngSubmit)="procesar()">
+
+            <div class="mb-2">
+                <label class="form-label">
+                    Nombre:
+                </label>
+
+                <input type="text" name="nombre" class="form-control" placeholder="Por favor ingrese un nombre" [(ngModel)]="persona.nombre" required name="ngModel">
+                
+            </div>
+
+            <div class="mb-2">
+                <label class="form-label">
+                    Email:
+                </label>
+
+                <input type="text" name="email" class="form-control" placeholder="Por favor ingrese email"[(ngModel)]="persona.email" required>
+            </div>
+
+            <div class="mb-2">
+                <label class="form-label">
+                    Edad:
+                </label>
+
+                <input type="text" name="Edad" class="form-control" placeholder="Por favor ingrese Edad"[(ngModel)]="persona.edad" required>
+            </div>
+
+            <button class="btn btn-primary mt-2">
+                Enviar
+            </button>
+
+            
+        </form>
+        
+    </div>
+</div>
+
+{{persona | json}}
+
